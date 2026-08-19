@@ -1,12 +1,8 @@
-# Plasma-Overdose
+# Plasma-Overdose-Dark
 
-![Preview](https://images.pling.com/img/00/00/64/63/03/1699532/screenshot-20220205-124157.png)
+placeholder for image
 
-Plasma-Overdose is a KDE theme inspired by the popular game *Needy Girl Overdose/Needy Streamer
-Overload*.
-
-Join our discord server! <https://discord.gg/xvWEt4NJcx>
-
+Plasma-Overdose-Dark is a dark mode theme based on https://github.com/Notify-ctrl/Plasma-Overdose
 
 ## What we offer
 
@@ -28,13 +24,6 @@ Should available across DEs:
 
 * `sounds/`: Sound Theme
 * `cursors/`: Cursor Theme
-
-## Todos
-
-- Renew the code
-- A Kvantum theme, for adjusting Widget Style.
-- An icon theme. We started this work in separate repo: [Plasma-Overdose-Icons](https://codeberg.org/notify-ctrl/Plasma-Overdose-Icons)
-- (Maybe) Lock screen theme.
 
 ## Font
 
