@@ -66,17 +66,26 @@ echo -e "${BLUE}Installing cursor theme...${NC}"
 mkdir -p ~/.icons/CursorsOverdose
 cp -r "$SCRIPT_DIR/cursors/"* ~/.icons/CursorsOverdose/
 
-echo -e "${BLUE}Installing Color Scheme...${NC}"
+echo -e "${BLUE}Installing KWin window decorations...${NC}"
+mkdir -p ~/.local/share/kwin/decorations
+cp -r "$SCRIPT_DIR/kwin/Plasma-Overdose-KWinDeco" ~/.local/share/kwin/decorations/
+cp -r "$SCRIPT_DIR/kwin/Plasma-Overdose-KWinDeco-Dark" ~/.local/share/kwin/decorations/
+
+echo -e "${BLUE}Installing Color Schemes...${NC}"
 mkdir -p ~/.local/share/color-schemes
 cp "$SCRIPT_DIR/plasma/desktoptheme/Plasma-Overdose/colors" ~/.local/share/color-schemes/Plasma-Overdose.colors
+cp "$SCRIPT_DIR/plasma/desktoptheme/Plasma-Overdose-Dark/colors" ~/.local/share/color-schemes/PlasmaOverdoseDark.colors
 
-echo -e "${BLUE}Installing Desktop Theme...${NC}"
+echo -e "${BLUE}Installing Desktop Themes...${NC}"
 mkdir -p ~/.local/share/plasma/desktoptheme
 cp -r "$SCRIPT_DIR/plasma/desktoptheme/Plasma-Overdose" ~/.local/share/plasma/desktoptheme/
+cp -r "$SCRIPT_DIR/plasma/desktoptheme/Plasma-Overdose-Dark" ~/.local/share/plasma/desktoptheme/
 
-echo -e "${BLUE}Installing Global Theme...${NC}"
+echo -e "${BLUE}Installing Global Themes...${NC}"
 rm -rf ~/.local/share/plasma/look-and-feel/Plasma-Overdose
+rm -rf ~/.local/share/plasma/look-and-feel/Plasma-Overdose-Dark
 kpackagetool6 -t Plasma/LookAndFeel -i "$SCRIPT_DIR/plasma/look-and-feel/Plasma-Overdose"
+kpackagetool6 -t Plasma/LookAndFeel -i "$SCRIPT_DIR/plasma/look-and-feel/Plasma-Overdose-Dark"
 
 echo -e "${BLUE}Installing sound theme...${NC}"
 mkdir -p ~/.local/share/sounds/PlasmaOverdose
@@ -100,4 +109,4 @@ fc-cache -fv
 
 echo ""
 echo -e "${GREEN}Installation complete!${NC}"
-echo -e "${YELLOW}Please select the Plasma-Overdose theme in System Settings > Appearance > Global Theme${NC}"
+echo -e "${YELLOW}Please select the Plasma-Overdose (or Plasma-Overdose-Dark) theme in System Settings > Appearance > Global Theme${NC}"

@@ -10,25 +10,25 @@
       <default>15</default>
     </entry>
     <entry name="colorPurple" type="Color">
-      <default>#4D23EF</default>
+      <default>#C9A6FF</default>
     </entry>
     <entry name="colorCyan" type="Color">
-      <default>#90F4E4</default>
+      <default>#143038</default>
     </entry>
     <entry name="colorPink" type="Color">
-      <default>#F0D1F1</default>
+      <default>#2A1B3D</default>
     </entry>
     <entry name="colorMagenta" type="Color">
-      <default>#EAA0E8</default>
+      <default>#4A1F45</default>
     </entry>
     <entry name="colorGray" type="Color">
-      <default>#E3E3E3</default>
+      <default>#1C1A22</default>
     </entry>
     <entry name="colorWhite" type="Color">
-      <default>#FFF8FF</default>
+      <default>#14101F</default>
     </entry>
     <entry name="colorShadow" type="Color">
-      <default>#4D23EF</default>
+      <default>#05030A</default>
     </entry>
   </group>
 </kcfg>

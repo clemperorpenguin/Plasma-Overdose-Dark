@@ -7,13 +7,13 @@ Decoration {
   id: root
 
   property real pixelWidth: 1.5
-  property color colorPurple: "#4D23CF"
-  property color colorCyan: "#90F4E4"
-  property color colorPink: "#F0D1F1"
-  property color colorMagenta: "#EAA0E8"
-  property color colorWhite: "#FFF8FF"
-  property color colorGray: "#E3E3E3"
-  property color colorShadow: "#4D23CF"
+  property color colorPurple: "#C9A6FF"
+  property color colorCyan: "#143038"
+  property color colorPink: "#2A1B3D"
+  property color colorMagenta: "#4A1F45"
+  property color colorWhite: "#14101F"
+  property color colorGray: "#1C1A22"
+  property color colorShadow: "#05030A"
   readonly property real buttonSize: pixelWidth * 10
 
   DecorationOptions {
@@ -298,13 +298,13 @@ Decoration {
   }
 
   function setupColors() {
-    root.colorPurple = decoration.readConfig("colorPurple", Qt.color("#4D23EF"));
-    root.colorCyan = decoration.readConfig("colorCyan", Qt.color("#90F4E4"));
-    root.colorPink = decoration.readConfig("colorPink", Qt.color("#F0D1F1"));
-    root.colorMagenta = decoration.readConfig("colorMagenta", Qt.color("#EAA0E8"));
-    root.colorGray = decoration.readConfig("colorGray", Qt.color("#E3E3E3"));
-    root.colorWhite = decoration.readConfig("colorWhite", Qt.color("#FFF8FF"));
-    root.colorShadow = decoration.readConfig("colorShadow", Qt.color("#4D23EF"));
+    root.colorPurple = decoration.readConfig("colorPurple", Qt.color("#C9A6FF"));
+    root.colorCyan = decoration.readConfig("colorCyan", Qt.color("#143038"));
+    root.colorPink = decoration.readConfig("colorPink", Qt.color("#2A1B3D"));
+    root.colorMagenta = decoration.readConfig("colorMagenta", Qt.color("#4A1F45"));
+    root.colorGray = decoration.readConfig("colorGray", Qt.color("#1C1A22"));
+    root.colorWhite = decoration.readConfig("colorWhite", Qt.color("#14101F"));
+    root.colorShadow = decoration.readConfig("colorShadow", Qt.color("#05030A"));
   }
 
   Component.onCompleted: {

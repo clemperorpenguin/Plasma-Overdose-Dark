@@ -1,0 +1,26 @@
+{
+	"KPackageStructure": "Plasma/LookAndFeel",
+	"KPlugin": {
+		"Authors": [
+			{
+				"Name": "Notify-ctrl",
+        "Email": "notify-ctrl@qq.com"
+			}
+		],
+		"Category": "",
+		"Description": " Dark variant of Plasma Overdose, a KDE theme inspired by the popular game Needy Girl Overdose/Needy Streamer Overload.",
+		"Description[zh_TW]": "「Plasma 重度依賴」的深色版本，此主題是受到「主播女孩重度依賴」這款遊戲所啟發",
+		"Id": "Plasma-Overdose-Dark",
+		"License": "GPLv3",
+		"Name": "Plasma Overdose Dark",
+		"Name[zh_CN]": "Plasma 重度依赖 深色",
+		"Name[zh_TW]": "Plasma 重度依賴 深色",
+    "Version": "0.1.0",
+		"Website": "https://codeberg.org/Notify-ctrl/Plasma-Overdose"
+	},
+	"Keywords": "Desktop;Workspace;Appearance;Look and Feel;Global Theme",
+  "X-KPackage-Dependencies": [
+    "kns://wallpaper.knsrc/api.kde-look.org/2353605",
+    "kns://xcursor.knsrc/api.kde-look.org/1700441"
+  ]
+}

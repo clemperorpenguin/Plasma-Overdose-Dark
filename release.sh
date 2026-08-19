@@ -24,6 +24,7 @@ rel sounds Sounds
 rel kwin
 cd build/kwin/${PROJ}
 tar zcfh ${PROJ}-KWin-Decorations-${VER}.tar.gz ${PROJ}-KWinDeco
+tar zcfh ${PROJ}-KWin-Decorations-Dark-${VER}.tar.gz ${PROJ}-KWinDeco-Dark
 mv *.tar.gz ..
 cd - > /dev/null
 
@@ -38,6 +39,8 @@ cd - > /dev/null
 rel plasma
 cd build/plasma/${PROJ}/look-and-feel
 tar zcf ${PROJ}-GlobalTheme-${VER}.tar.gz ${PROJ}
+tar zcfh ${PROJ}-GlobalTheme-Dark-${VER}.tar.gz ${PROJ}-Dark
 cd ../desktoptheme
 tar zcf ${PROJ}-DesktopTheme-${VER}.tar.gz ${PROJ}
+tar zcf ${PROJ}-DesktopTheme-Dark-${VER}.tar.gz ${PROJ}-Dark
 cd - >/dev/null

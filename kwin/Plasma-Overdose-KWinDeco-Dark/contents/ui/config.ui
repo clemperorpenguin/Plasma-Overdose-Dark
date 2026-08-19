@@ -63,9 +63,9 @@
       <widget class="KColorButton" name="kcfg_colorCyan">
        <property name="defaultColor">
         <color>
-         <red>144</red>
-         <green>244</green>
-         <blue>228</blue>
+         <red>20</red>
+         <green>48</green>
+         <blue>56</blue>
         </color>
        </property>
       </widget>
@@ -81,9 +81,9 @@
       <widget class="KColorButton" name="kcfg_colorPink">
        <property name="defaultColor">
         <color>
-         <red>240</red>
-         <green>209</green>
-         <blue>241</blue>
+         <red>42</red>
+         <green>27</green>
+         <blue>61</blue>
         </color>
        </property>
       </widget>
@@ -99,9 +99,9 @@
       <widget class="KColorButton" name="kcfg_colorMagenta">
        <property name="defaultColor">
         <color>
-         <red>234</red>
-         <green>160</green>
-         <blue>232</blue>
+         <red>74</red>
+         <green>31</green>
+         <blue>69</blue>
         </color>
        </property>
       </widget>
@@ -117,9 +117,9 @@
       <widget class="KColorButton" name="kcfg_colorGray">
        <property name="defaultColor">
         <color>
-         <red>227</red>
-         <green>227</green>
-         <blue>227</blue>
+         <red>28</red>
+         <green>26</green>
+         <blue>34</blue>
         </color>
        </property>
       </widget>
@@ -128,9 +128,9 @@
       <widget class="KColorButton" name="kcfg_colorPurple">
        <property name="defaultColor">
         <color>
-         <red>77</red>
-         <green>35</green>
-         <blue>207</blue>
+         <red>201</red>
+         <green>166</green>
+         <blue>255</blue>
         </color>
        </property>
       </widget>
@@ -146,9 +146,9 @@
       <widget class="KColorButton" name="kcfg_colorWhite">
        <property name="defaultColor">
         <color>
-         <red>255</red>
-         <green>248</green>
-         <blue>255</blue>
+         <red>20</red>
+         <green>16</green>
+         <blue>31</blue>
         </color>
        </property>
       </widget>
@@ -164,9 +164,9 @@
       <widget class="KColorButton" name="kcfg_colorShadow">
        <property name="defaultColor">
         <color>
-         <red>77</red>
-         <green>35</green>
-         <blue>239</blue>
+         <red>5</red>
+         <green>3</green>
+         <blue>10</blue>
         </color>
        </property>
       </widget>

@@ -20,6 +20,10 @@ Plasma-specific:
 * `kwin/`: Window Decorations (KWin, this is better)
 * `wallpapers/`: Wallpaper
 
+The Global Theme, Plasma Style, Color Scheme and KWin decoration each ship in two flavours: the
+original light one and a **dark** one, named `*-Dark`. The splash screen, wallpaper, Aurorae
+decorations, cursors and sounds are shared by both. See [Dark mode](#dark-mode).
+
 Should available across DEs:
 
 * `sounds/`: Sound Theme
@@ -67,6 +71,7 @@ To install the KWin window decoration run
 ```sh
 mkdir -p ~/.local/share/kwin/decorations
 cp -r kwin/Plasma-Overdose-KWinDeco ~/.local/share/kwin/decorations
+cp -r kwin/Plasma-Overdose-KWinDeco-Dark ~/.local/share/kwin/decorations
 ```
 
 To install the cursor theme run
@@ -79,17 +84,20 @@ To install the Color Scheme run
 ```sh
 mkdir -p ~/.local/share/color-schemes
 cp plasma/desktoptheme/Plasma-Overdose/colors ~/.local/share/color-schemes/Plasma-Overdose.colors
+cp plasma/desktoptheme/Plasma-Overdose-Dark/colors ~/.local/share/color-schemes/PlasmaOverdoseDark.colors
 ```
 
 To install the Desktop Theme run
 ```sh
 mkdir -p ~/.local/share/plasma/desktoptheme
 cp -r plasma/desktoptheme/Plasma-Overdose ~/.local/share/plasma/desktoptheme/
+cp -r plasma/desktoptheme/Plasma-Overdose-Dark ~/.local/share/plasma/desktoptheme/
 ```
 
 To install the Global Theme run
 ```sh
 kpackagetool6 -t Plasma/LookAndFeel -i plasma/look-and-feel/Plasma-Overdose
+kpackagetool6 -t Plasma/LookAndFeel -i plasma/look-and-feel/Plasma-Overdose-Dark
 ```
 
 To install the sound theme run
@@ -103,6 +111,45 @@ To install the wallpaper run
 mkdir -p ~/.local/share/wallpapers/Plasma-Overdose
 cp -r wallpapers/Plasma-Overdose/* ~/.local/share/wallpapers/Plasma-Overdose/
 ```
+
+## Dark mode
+
+Pick **Plasma Overdose Dark** in *System Settings > Colors & Themes > Global Theme*. It applies:
+
+* Color scheme `Plasma-Overdose-Dark` (`PlasmaOverdoseDark`)
+* Plasma Style `Plasma Overdose Dark`
+* KWin decoration `Plasma Overdose Dark (KWin)`
+* Icon theme `breeze-dark`
+* The same splash screen, wallpaper and cursors as the light theme
+
+Because the splash screen lives in the light package, install both Global Themes if you want one
+(`[ksplashrc][KSplash] Theme=Plasma-Overdose`); everything else works with the dark package alone.
+
+The palette:
+
+| Role            | Hex       |
+| --------------- | --------- |
+| Window backgnd  | `#14101F` |
+| View background | `#0E0B16` |
+| Surface / alt   | `#241B3A` |
+| Text            | `#F0D1F1` |
+| Dimmed text     | `#9B8FB5` |
+| Purple accent   | `#A87CFF` |
+| Magenta accent  | `#EAA0E8` |
+| Cyan accent     | `#90F4E4` |
+| Selection       | `#FF557F` |
+
+For Konsole, import `konsole/Plasma-Overdose-Dark.colorscheme` (*Settings > Edit Current Profile >
+Appearance*), or copy it to `~/.local/share/konsole/`.
+
+The Aurorae decorations and the wallpaper are drawn artwork and have no dark counterpart; the dark
+Global Theme uses the KWin decoration instead, and the dark Global Theme has no preview thumbnail
+in System Settings for the same reason.
+
+Every color of the KWin decoration is editable in *System Settings > Window Decorations > Configure
+Plasma Overdose Dark (KWin)*. Two of them are new in both variants: the content background (was a
+hardcoded near-white) and the drop shadow (was tied to the border color, which would glow rather
+than shade in dark mode).
 
 After completing all the steps, you need to manually set the theme and its components in:
 
